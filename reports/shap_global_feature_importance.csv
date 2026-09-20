@@ -1,0 +1,10 @@
+feature,mean_abs_shap
+pct_change,0.20439901632807903
+temporal_anomaly_score,0.10275350875318252
+spec_proximity,0.08109596776766635
+iso_forest_temporal_score,0.030695359229278466
+acceleration,0.018646668288609523
+robust_z_final,0.01760625270560732
+population_anomaly_score,0.012981618069155737
+iso_forest_score,0.010006452037911768
+n_abnormal_jumps,0.004736929323620005

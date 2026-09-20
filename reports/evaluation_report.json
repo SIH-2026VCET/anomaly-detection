@@ -1,0 +1,160 @@
+{
+  "test_split": {
+    "split": "test",
+    "n_components": 40,
+    "n_positive_ground_truth": 14,
+    "static_screening": {
+      "precision": 1.0,
+      "recall": 0.2857,
+      "f1": 0.4444,
+      "confusion_matrix": {
+        "tn": 26,
+        "fp": 0,
+        "fn": 10,
+        "tp": 4
+      },
+      "roc_auc": null
+    },
+    "dynamic_ai_screening": {
+      "precision": 0.7143,
+      "recall": 0.3571,
+      "f1": 0.4762,
+      "confusion_matrix": {
+        "tn": 24,
+        "fp": 2,
+        "fn": 9,
+        "tp": 5
+      },
+      "roc_auc": 0.5769
+    },
+    "latent_defect_analysis": {
+      "n_latent_defects_in_split": 10,
+      "n_caught_by_static_screening": 0,
+      "n_caught_by_dynamic_ai_screening": 1,
+      "dynamic_recall_on_latent_defects": 0.1
+    },
+    "by_failure_mode": [
+      {
+        "failure_mode": "accelerating_drift",
+        "n": 2,
+        "static_detected": 1,
+        "dynamic_detected": 2,
+        "ground_truth_positive": 2
+      },
+      {
+        "failure_mode": "gradual_drift",
+        "n": 4,
+        "static_detected": 2,
+        "dynamic_detected": 2,
+        "ground_truth_positive": 4
+      },
+      {
+        "failure_mode": "healthy",
+        "n": 25,
+        "static_detected": 0,
+        "dynamic_detected": 1,
+        "ground_truth_positive": 3
+      },
+      {
+        "failure_mode": "latent_defect",
+        "n": 4,
+        "static_detected": 1,
+        "dynamic_detected": 2,
+        "ground_truth_positive": 3
+      },
+      {
+        "failure_mode": "lot_outlier",
+        "n": 2,
+        "static_detected": 0,
+        "dynamic_detected": 0,
+        "ground_truth_positive": 1
+      },
+      {
+        "failure_mode": "sudden_jump",
+        "n": 3,
+        "static_detected": 0,
+        "dynamic_detected": 0,
+        "ground_truth_positive": 1
+      }
+    ]
+  },
+  "full_dataset": {
+    "split": "all",
+    "n_components": 240,
+    "n_positive_ground_truth": 66,
+    "static_screening": {
+      "precision": 1.0,
+      "recall": 0.303,
+      "f1": 0.4651,
+      "confusion_matrix": {
+        "tn": 174,
+        "fp": 0,
+        "fn": 46,
+        "tp": 20
+      },
+      "roc_auc": null
+    },
+    "dynamic_ai_screening": {
+      "precision": 0.5577,
+      "recall": 0.4394,
+      "f1": 0.4915,
+      "confusion_matrix": {
+        "tn": 151,
+        "fp": 23,
+        "fn": 37,
+        "tp": 29
+      },
+      "roc_auc": 0.6112
+    },
+    "latent_defect_analysis": {
+      "n_latent_defects_in_split": 46,
+      "n_caught_by_static_screening": 0,
+      "n_caught_by_dynamic_ai_screening": 9,
+      "dynamic_recall_on_latent_defects": 0.1957
+    },
+    "by_failure_mode": [
+      {
+        "failure_mode": "accelerating_drift",
+        "n": 12,
+        "static_detected": 7,
+        "dynamic_detected": 11,
+        "ground_truth_positive": 12
+      },
+      {
+        "failure_mode": "gradual_drift",
+        "n": 19,
+        "static_detected": 8,
+        "dynamic_detected": 11,
+        "ground_truth_positive": 18
+      },
+      {
+        "failure_mode": "healthy",
+        "n": 163,
+        "static_detected": 0,
+        "dynamic_detected": 10,
+        "ground_truth_positive": 19
+      },
+      {
+        "failure_mode": "latent_defect",
+        "n": 17,
+        "static_detected": 4,
+        "dynamic_detected": 11,
+        "ground_truth_positive": 9
+      },
+      {
+        "failure_mode": "lot_outlier",
+        "n": 14,
+        "static_detected": 0,
+        "dynamic_detected": 4,
+        "ground_truth_positive": 1
+      },
+      {
+        "failure_mode": "sudden_jump",
+        "n": 15,
+        "static_detected": 1,
+        "dynamic_detected": 5,
+        "ground_truth_positive": 7
+      }
+    ]
+  }
+}
